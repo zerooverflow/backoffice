@@ -1,0 +1,23 @@
+{
+  "name": "backoffice",
+  "description": "",
+  "main": "",
+  "authors": [
+    "zerooverflow <simone.buono@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-ui-router": "ui-router#^0.3.2",
+    "angular-resource": "1.6.1"
+  }
+}

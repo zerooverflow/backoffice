@@ -1,0 +1,16 @@
+<ul>
+    <li ng-repeat="item in $ctrl.menuList" ng-if="item.visible" ui-sref-active="active">
+        <a ui-sref="{{::item.link}}" ng-click="$ctrl.open(item)">
+            <i class="fa {{::item.icon}} fa-fw fa-lg"></i>
+            <span class="hidden-xs">
+                {{::item.label}}
+                <span ng-if="item.children" class="caret"></span>
+            </span>
+        </a>
+        <ul ng-if="item.children && item.open" class="sub-menu">
+            <li ng-repeat="child in item.children">
+                <a ui-sref="{{::child.link}}">{{::child.label}}</a>
+            </li>
+        </ul>
+    </li>
+</ul>

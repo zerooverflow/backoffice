@@ -1,0 +1,17 @@
+$background : #46535d;
+$textcolor : #fefefe;
+
+
+body{
+  background-color : $background;
+  color : $textcolor;
+}
+
+.navbar-inverse {
+  background-color: darken($background,10);
+  border-color: darken($background,11);
+}
+
+.main-sidebar{
+  background-color: darken($background,12);
+}

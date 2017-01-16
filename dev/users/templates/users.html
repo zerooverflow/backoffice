@@ -1,0 +1,21 @@
+<h4>Utenti</h4>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <th><input type="checkbox"/></th>
+            <th>Nome utente</th>
+            <th>Email</th>
+            <th>Ruolo</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in $ctrl.users">
+                <td><input type="checkbox" value="{{::user.id}}"/></td>
+                <td><a ui-sref="user({userid: user.id})">{{::user.name}}</a></td>
+                <td><a href="mailto:{{::user.email}}">{{::user.email}}</a></td>
+                <td>{{::user.role}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
